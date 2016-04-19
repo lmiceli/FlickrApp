@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://id.net",
+  "type": "object",
+  "properties": {
+    "title": {
+      "id": "title",
+      "type": "string"
+    },
+    "link": {
+      "id": "link",
+      "type": "string"
+    },
+    "description": {
+      "id": "description",
+      "type": "string"
+    },
+    "modified": {
+      "id": "modified",
+      "type": "string"
+    },
+    "generator": {
+      "id": "generator",
+      "type": "string"
+    },
+    "items": {
+      "id": "items",
+      "type": "array",
+      "items": [
+        {
+          "id": "items",
+          "type": "object",
+          "properties": {
+            "title": {
+              "id": "items/title",
+              "type": "string"
+            },
+            "link": {
+              "id": "items/link",
+              "type": "string"
+            },
+            "media": {
+              "id": "items/media",
+              "type": "object",
+              "properties": {
+                "m": {
+                  "id": "items/media/m",
+                  "type": "string"
+                }
+              }
+            },
+            "date_taken": {
+              "id": "items/date_taken",
+              "type": "string"
+            },
+            "description": {
+              "id": "items/description",
+              "type": "string"
+            },
+            "published": {
+              "id": "items/published",
+              "type": "string"
+            },
+            "author": {
+              "id": "items/author",
+              "type": "string"
+            },
+            "author_id": {
+              "id": "items/author_id",
+              "type": "string"
+            },
+            "tags": {
+              "id": "items/tags",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "link",
+    "description",
+    "modified",
+    "generator",
+    "items"
+  ]
+}
