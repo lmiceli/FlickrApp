@@ -3,7 +3,7 @@
 techs used:
 
 * butterknife
-* rxandroid:1.1.0'
+* rxandroid
 * gson
 * retrofit
 * picasso
